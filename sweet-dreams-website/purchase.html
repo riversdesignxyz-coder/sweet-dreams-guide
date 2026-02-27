@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Copy — Sweet Dreams Baby Sleep Guide</title>
+  <meta name="description" content="Purchase the Sweet Dreams baby sleep guide for R99. Instant PDF download. Secure payment via PayFast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="moon">🌙</span> Sweet Dreams</a>
+    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="preview.html">Free Preview</a>
+      <a href="faq.html">FAQ</a>
+      <a href="purchase.html" class="active btn btn-primary" style="padding:10px 22px;font-size:0.88rem;">Get the Guide — R99</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Purchase Hero -->
+<section class="purchase-hero">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:10px;">
+      <span class="section-label">Secure checkout</span>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.5rem);">Get Your Copy of Sweet Dreams</h1>
+      <p>Instant PDF download after payment. Start reading in minutes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Purchase Content -->
+<section style="padding-top:0;margin-top:-20px;">
+  <div class="container">
+    <div class="purchase-grid">
+
+      <!-- Left: Purchase Card -->
+      <div>
+        <div class="purchase-card">
+          <div style="text-align:center;margin-bottom:24px;">
+            <div style="font-size:0.85rem;color:var(--gray);margin-bottom:4px;">Complete Guide</div>
+            <div class="price"><span class="cur">R</span>99</div>
+            <div style="font-size:0.85rem;color:var(--gray);">Once-off payment • No subscription</div>
+          </div>
+
+          <ul class="includes-list">
+            <li><span class="check">✓</span> 40-page professionally designed PDF guide</li>
+            <li><span class="check">✓</span> 10 comprehensive chapters (newborn to 24 months)</li>
+            <li><span class="check">✓</span> 5 sleep training methods compared</li>
+            <li><span class="check">✓</span> Age-specific sample schedules</li>
+            <li><span class="check">✓</span> Environment optimization checklist</li>
+            <li><span class="check">✓</span> Troubleshooting guide for common issues</li>
+            <li><span class="check">✓</span> Printable weekly sleep log template</li>
+            <li><span class="check">✓</span> Age-by-age quick reference cards</li>
+            <li><span class="check">✓</span> 8 sleep myths debunked</li>
+            <li><span class="check">✓</span> Bonus FAQ section</li>
+          </ul>
+
+          <!--
+            ═══════════════════════════════════════════════════
+            PAYFAST INTEGRATION
+            ═══════════════════════════════════════════════════
+            To connect this to your PayFast account:
+
+            1. Create a free PayFast account at https://www.payfast.co.za
+            2. In your PayFast dashboard, go to Settings > Integration
+            3. Copy your Merchant ID and Merchant Key
+            4. Replace YOUR_MERCHANT_ID and YOUR_MERCHANT_KEY below
+            5. Set the return_url to your thank-you/download page
+            6. Set the notify_url to your server endpoint for ITN (payment confirmation)
+
+            For TESTING, use the PayFast Sandbox:
+            - Sandbox URL: https://sandbox.payfast.co.za/eng/process
+            - Sandbox Merchant ID: 10000100
+            - Sandbox Merchant Key: 46f0cd694581a
+
+            When ready to go LIVE, change the form action to:
+            https://www.payfast.co.za/eng/process
+            ═══════════════════════════════════════════════════
+          -->
+
+          <!-- PayFast Payment Form -->
+          <form action="https://sandbox.payfast.co.za/eng/process" method="POST" id="payfast-form">
+            <!-- Merchant Details — REPLACE WITH YOUR OWN -->
+            <input type="hidden" name="merchant_id" value="10000100">
+            <input type="hidden" name="merchant_key" value="46f0cd694581a">
+
+            <!-- URLs -->
+            <input type="hidden" name="return_url" value="https://yoursite.com/thank-you.html">
+            <input type="hidden" name="cancel_url" value="https://yoursite.com/purchase.html">
+            <input type="hidden" name="notify_url" value="https://yoursite.com/api/payfast-notify">
+
+            <!-- Transaction Details -->
+            <input type="hidden" name="amount" value="99.00">
+            <input type="hidden" name="item_name" value="Sweet Dreams: Baby Sleep Guide (PDF)">
+            <input type="hidden" name="item_description" value="40-page evidence-based baby sleep guide, 0-24 months">
+
+            <!-- Optional: Pre-fill buyer email -->
+            <input type="hidden" name="email_address" value="">
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:8px;border-radius:var(--radius-sm);">
+              🔒 Pay Securely with PayFast — R99
+            </button>
+          </form>
+
+          <div style="text-align:center;margin-top:16px;">
+            <div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:0.78rem;color:var(--gray);">Accepted:</span>
+              <span style="font-size:0.82rem;font-weight:600;color:var(--dark);">Visa</span>
+              <span style="color:var(--light-blue);">•</span>
+              <span style="font-size:0.82rem;font-weight:600;color:var(--dark);">Mastercard</span>
+              <span style="color:var(--light-blue);">•</span>
+              <span style="font-size:0.82rem;font-weight:600;color:var(--dark);">EFT</span>
+              <span style="color:var(--light-blue);">•</span>
+              <span style="font-size:0.82rem;font-weight:600;color:var(--dark);">SnapScan</span>
+              <span style="color:var(--light-blue);">•</span>
+              <span style="font-size:0.82rem;font-weight:600;color:var(--dark);">Zapper</span>
+            </div>
+            <p style="font-size:0.75rem;color:var(--gray);margin-top:8px;">256-bit SSL encrypted • Processed by PayFast (South Africa)</p>
+          </div>
+        </div>
+
+        <!-- Sandbox notice — REMOVE when going live -->
+        <div style="background:#FFF3CD;border:1px solid #FFE69C;border-radius:var(--radius-sm);padding:16px;margin-top:16px;">
+          <p style="font-size:0.85rem;color:#664D03;margin:0;"><strong>⚠️ Sandbox Mode:</strong> This form currently uses PayFast's test environment. To go live, replace the merchant_id, merchant_key, and change the form action URL. See the HTML comments in the code for full instructions.</p>
+        </div>
+      </div>
+
+      <!-- Right: Benefits -->
+      <div class="purchase-benefits">
+        <h3>Why parents love this guide</h3>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="background:rgba(91,141,184,0.1);">🧠</div>
+          <div class="benefit-text">
+            <h4>Evidence-based, not opinion-based</h4>
+            <p>Every strategy is backed by published research from leading pediatric journals. We cite our sources.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="background:rgba(232,200,122,0.15);">⚖️</div>
+          <div class="benefit-text">
+            <h4>No judgment, all options</h4>
+            <p>We present 5 approaches from gentle to structured. You choose what's right for your family.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="background:rgba(127,168,134,0.12);">📅</div>
+          <div class="benefit-text">
+            <h4>Grows with your baby</h4>
+            <p>Covers every stage from newborn to 24 months. One guide for the entire journey.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="background:rgba(123,104,174,0.1);">⚡</div>
+          <div class="benefit-text">
+            <h4>Instant access</h4>
+            <p>Download immediately after payment. Start reading in minutes — even at 3 AM.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="background:rgba(232,131,107,0.1);">🖨️</div>
+          <div class="benefit-text">
+            <h4>Printable tools included</h4>
+            <p>Sleep log, environment checklist, and age-by-age reference cards you can stick on the fridge.</p>
+          </div>
+        </div>
+
+        <!-- Testimonial -->
+        <div style="background:var(--cream);border-radius:var(--radius);padding:24px;margin-top:24px;">
+          <div style="color:var(--gold);margin-bottom:8px;">★★★★★</div>
+          <p style="font-style:italic;font-size:0.95rem;color:var(--dark);line-height:1.7;">"I've read three baby sleep books and none of them gave me what this 40-page guide did: a clear, honest comparison of methods so I could make an informed choice. My 7-month-old now sleeps through the night."</p>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:12px;">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--light-blue);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;color:var(--navy);">TK</div>
+            <div>
+              <div style="font-weight:600;font-size:0.88rem;color:var(--navy);">Thandi K.</div>
+              <div style="font-size:0.78rem;color:var(--gray);">Mom of a 9-month-old, Pretoria</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">🌙 Sweet Dreams</div>
+    <p>Helping families sleep better, one night at a time.</p>
+    <p style="font-size:0.78rem;margin-top:8px;">This guide is for informational purposes only and is not medical advice.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="preview.html">Preview</a>
+      <a href="faq.html">FAQ</a>
+      <a href="purchase.html">Buy Now</a>
+    </div>
+    <p style="margin-top:24px;font-size:0.75rem;">&copy; 2026 Sweet Dreams. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+</body>
+</html>
